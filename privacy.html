@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy – ChatGPT + Claude AI Exporter</title>
   <meta name="description" content="How ChatGPT + Claude AI Exporter handles your data: your chats never leave your browser.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='M10 7h8l5 5v13H10z' fill='white'/%3E%3Cpath d='M16 13v8m-3.5-3.5L16 21l3.5-3.5' stroke='%230f766e' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site">
     <div class="wrap">
       <a class="brand" href="./">
-        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0f766e"/><path d="M10 7h8l5 5v13H10z" fill="#fff"/><path d="M16 13v8m-3.5-3.5L16 21l3.5-3.5" stroke="#0f766e" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        <img src="icon.png" width="32" height="32" alt="">
         ChatGPT + Claude AI Exporter
       </a>
       <nav class="site" aria-label="Main">
@@ -35,11 +35,14 @@
 
       <h2>What the extension does with your chats</h2>
       <ul>
-        <li>When you click <strong>Export</strong>, the extension reads that chat from the AI website you're signed in to (today: claude.ai), using your existing browser session. It does not ask for, see or store your password.</li>
+        <li>When you click <strong>Export</strong>, the extension reads that chat from the AI website you're signed in to (chatgpt.com or claude.ai), using your existing browser session. It does not ask for, see or store your password.</li>
         <li>It builds the file (PDF, Word, Markdown, Text or JSON) inside your browser and saves it to your computer, or copies it to your clipboard if you choose “Copy”.</li>
         <li>No chat content, file or prompt is ever sent to us or to any third party.</li>
         <li>It reads chats only when you ask it to. It never sends messages or prompts on your behalf.</li>
       </ul>
+
+      <h2>ChatGPT's access token</h2>
+      <p>chatgpt.com only shows a chat's data to its own page when the request carries a short-lived access token. When you click <strong>Export</strong> on chatgpt.com, the extension asks chatgpt.com for this token, keeps it in memory for that one export, and sends it only back to chatgpt.com to read the chat you chose. It is never saved, logged or sent anywhere else. chatgpt.com returns longer-lived login information in the same reply; the extension does not read or keep it. On claude.ai no token is needed: your normal browser session is enough.
 
       <h2>What is stored on your computer</h2>
       <ul>
@@ -63,13 +66,16 @@
 
       <h2>Permissions the extension asks for</h2>
       <ul>
-        <li><strong>Access to claude.ai</strong> (and, once supported, chatgpt.com): to read the chat you choose to export and to show the Export button on those pages only.</li>
+        <li><strong>Access to chatgpt.com and claude.ai</strong>: to read the chat you choose to export and to show the Export button on those pages only.</li>
         <li><strong>Storage</strong>: to remember your export settings (and, with Pro, your licence).</li>
         <li><strong>Scripting</strong>: to load the export tools only when you click Export, which keeps the AI website fast.</li>
       </ul>
 
       <h2>Emails you send us</h2>
       <p>If you email us, we use your email address and message only to reply and to help you. We keep the conversation only as long as needed to support you.</p>
+
+      <h2>Limited Use</h2>
+      <p>Our use of information received from your browser adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Information the extension handles is used only to make the export you ask for.</p>
 
       <h2>Children</h2>
       <p>The extension is not directed at children under 13, and we don't knowingly collect data from them.</p>
@@ -94,6 +100,7 @@
         <a href="mailto:siddheshthapa02@gmail.com">Contact</a>
       </nav>
       <p>© 2026 Carryall · ChatGPT + Claude AI Exporter. Not affiliated with OpenAI or Anthropic. ChatGPT is a trademark of OpenAI; Claude is a trademark of Anthropic.</p>
+      <p>Our use of information received from your browser adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. <a href="privacy.html">Privacy Policy</a>.</p>
     </div>
   </footer>
 </body>
