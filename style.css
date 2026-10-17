@@ -91,3 +91,20 @@ article.doc h2 { font-size: 21px; margin: 32px 0 8px; }
 article.doc li { margin: 6px 0; }
 .summary { background: var(--accent-soft); border-radius: var(--radius); padding: 16px 20px; }
 .summary p { margin: 0; }
+
+/* Guide pages */
+.guide { max-width: 780px; padding-top: 24px; padding-bottom: 48px; }
+.guide h1 { font-size: 32px; line-height: 1.2; margin: 8px 0 20px; }
+.guide h2 { margin-top: 32px; }
+.crumbs { font-size: 14px; color: var(--muted); margin: 0; }
+.crumbs a { color: var(--muted); }
+.answer { background: var(--accent-soft); border-radius: var(--radius); padding: 16px 18px; }
+.guide figure { margin: 20px 0; }
+.guide figure img { width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
+.guide .steps li { margin: 6px 0; }
+.guide .cta { margin-top: 36px; padding: 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.guide .cta h2 { margin-top: 0; }
+.guide details { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.guide summary { cursor: pointer; font-weight: 600; }
+.disclose, .muted { color: var(--muted); font-size: 14px; }
+.guide-list li { margin: 14px 0; }
