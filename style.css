@@ -102,6 +102,7 @@ article.doc li { margin: 6px 0; }
 .guide figure { margin: 20px 0; }
 .guide figure img { width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
 .guide .steps li { margin: 6px 0; }
+.guide pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: 12px 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); font-size: 14px; line-height: 1.55; }
 .guide .cta { margin-top: 36px; padding: 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .guide .cta h2 { margin-top: 0; }
 .guide details { border-bottom: 1px solid var(--line); padding: 10px 0; }
