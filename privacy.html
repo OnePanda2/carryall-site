@@ -27,9 +27,9 @@
   <main class="wrap">
     <article class="doc">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 17 October 2026</p>
+      <p class="updated">Last updated: 19 October 2026</p>
 
-      <div class="summary"><p><strong>In short:</strong> your chats never leave your browser. We don't collect, store, sell or share your chats or your personal data. We have no analytics and no servers that receive your content.</p></div>
+      <div class="summary"><p><strong>In short:</strong> your chats never leave your browser. We don't collect, store, sell or share your chats or your personal data. We have no analytics and no servers that receive your content. The only thing that goes anywhere else is your Pro licence key, which is checked with our payment provider.</p></div>
 
       <h2>Who we are</h2>
       <p>“AI Chat Exporter: ChatGPT, Claude & Gemini” (“the extension”) is a browser extension made by CarryAll (“we”, “us”). Contact: <a href="mailto:siddheshthapa02@gmail.com">siddheshthapa02@gmail.com</a>.</p>
@@ -37,26 +37,29 @@
       <h2>What the extension does with your chats</h2>
       <ul>
         <li>When you click <strong>Export</strong>, the extension reads that chat from the AI website you're signed in to (chatgpt.com, claude.ai or gemini.google.com), using your existing browser session. It does not ask for, see or store your password.</li>
+        <li>With <strong>Export many chats</strong>, it first reads the list of your chats from the same website, then reads the chats you pick one at a time, at least a second apart, and puts them into one ZIP file on your computer.</li>
         <li>It builds the file (PDF, Word, Markdown, Text or JSON) inside your browser and saves it to your computer, or copies it to your clipboard if you choose “Copy”.</li>
         <li>No chat content, file or prompt is ever sent to us or to any third party.</li>
         <li>It reads chats only when you ask it to. It never sends messages or prompts on your behalf.</li>
       </ul>
 
       <h2>ChatGPT's access token</h2>
-      <p>chatgpt.com only shows a chat's data to its own page when the request carries a short-lived access token. When you click <strong>Export</strong> on chatgpt.com, the extension asks chatgpt.com for this token, keeps it in memory for that one export, and sends it only back to chatgpt.com to read the chat you chose. It is never saved, logged or sent anywhere else. chatgpt.com returns longer-lived login information in the same reply; the extension does not read or keep it. On claude.ai no token is needed: your normal browser session is enough.</p>
+      <p>chatgpt.com only shows a chat's data to its own page when the request carries a short-lived access token. When you click <strong>Export</strong> on chatgpt.com, the extension asks chatgpt.com for this token, keeps it in memory only while that export runs, and sends it only back to chatgpt.com to read the chats you chose. It is never saved, logged or sent anywhere else. chatgpt.com returns longer-lived login information in the same reply; the extension does not read or keep it. On claude.ai no token is needed: your normal browser session is enough.</p>
 
       <h2>Gemini's page token</h2>
-      <p>gemini.google.com only answers its chat-data request when it carries the page's own security token. When you click <strong>Export</strong> on gemini.google.com, the extension reads this token from the open Gemini page, keeps it in memory for that one export, and sends it only back to gemini.google.com to read the chat you chose (one request per 10 messages, at least a second apart). It is never saved, logged or sent anywhere else.</p>
+      <p>gemini.google.com only answers its chat-data request when it carries the page's own security token. When you click <strong>Export</strong> on gemini.google.com, the extension reads this token from the open Gemini page, keeps it in memory only while that export runs, and sends it only back to gemini.google.com to read the chats you chose (one request per 10 messages, at least a second apart; with Export many chats, also one request per page of your chat list). It is never saved, logged or sent anywhere else.</p>
 
       <h2>What is stored on your computer</h2>
       <ul>
         <li>Your choices in the export window (for example your preferred format) are saved in your browser's extension storage so they're remembered next time. They never leave your computer.</li>
         <li>A count of your successful exports, used only to ask you once — and remind you once — whether you'd like to rate the extension on the Chrome Web Store. It never leaves your computer.</li>
-        <li>When Pro is available: your licence key and its status are stored in the same place.</li>
+        <li>With Pro: your licence key, its activation ID, your plan and when it was last checked. Not your name, email address or phone number.</li>
+        <li>While an <strong>Export many chats</strong> run is going: the list of chats you picked (their IDs, titles and dates) and how far it got, so you can continue after a reload. It's deleted when the run ends or you start over.</li>
+        <li>A small note so the “What's new” message is shown only once after an update.</li>
       </ul>
 
-      <h2>The only network request that isn't to the AI website</h2>
-      <p>When Pro is available, the extension checks your licence key with the licence service of our payment provider, Dodo Payments. Only the licence key (and a device label used to count activations) is sent — never your chats. If you use the free version, this check never happens.</p>
+      <h2>The only network request that isn't to the AI website: the Pro licence check</h2>
+      <p>When you paste a Pro licence key, and after that about once a week (sooner if a check couldn't reach Dodo), the extension asks the licence service of our payment provider, Dodo Payments, whether the key is still valid. It sends only the licence key, its activation ID and a device label such as “CarryAll · Chrome on Windows” (you'll see this label in your Dodo Payments customer portal, where it counts toward your 3 computers). Dodo's reply also contains the name, email address and phone number on your order; the extension doesn't keep or show them. When you click <strong>Remove key from this computer</strong>, the extension tells Dodo Payments to free that activation. Your chats are never sent. If you use the free version, this check never happens.</p>
 
       <h2>Payments</h2>
       <p>Purchases are processed by <strong>Dodo Payments</strong>, our Merchant of Record. Dodo Payments collects the details needed to take payment, calculate tax and send your receipt and licence key (such as your name, email address, billing country and card details). We don't receive your card details. Dodo Payments handles this data under its own privacy policy, available on dodopayments.com. We receive order information from Dodo Payments (such as your email address, the plan you bought and the order ID) so we can support you and handle refunds.</p>
@@ -72,7 +75,7 @@
       <h2>Permissions the extension asks for</h2>
       <ul>
         <li><strong>Access to chatgpt.com, claude.ai and gemini.google.com</strong>: to read the chat you choose to export and to show the Export button on those pages only.</li>
-        <li><strong>Storage</strong>: to remember your export settings and the export count for the rating question (and, with Pro, your licence).</li>
+        <li><strong>Storage</strong>: to remember your export settings, the export count for the rating question, the progress of an Export many chats run, and, with Pro, your licence.</li>
         <li><strong>Scripting</strong>: to load the export tools only when you click Export, which keeps the AI website fast.</li>
       </ul>
 
